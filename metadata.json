@@ -1,0 +1,6 @@
+{
+  "name": "XO Arena",
+  "description": "A notebook-style Tic-Tac-Toe game with hand-drawn X and O marks, smart AI difficulty levels, local two-player mode, player stats, and match history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
