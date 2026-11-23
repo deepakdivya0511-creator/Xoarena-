@@ -46,6 +46,17 @@ jobs:
       - name: Sync Android
         run: npx cap sync android
 
+      - name: Prepare app icon
+        run: |
+          mkdir -p assets
+          cp src/assets/file_0000000066808211ab5c6840a6c24c70.png assets/icon.png
+
+      - name: Generate Android icon
+        run: npx @capacitor/assets generate --android
+
+      - name: Sync generated icon
+        run: npx cap sync android
+
       - name: Build APK
         run: |
           cd android
