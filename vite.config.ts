@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/xoarena-',
+    base: process.env.CAPACITOR_BUILD === 'true' ? './' : '/xoarena-/',
 
     plugins: [
       react(),
